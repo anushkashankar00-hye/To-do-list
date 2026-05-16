@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Study Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="dashboard">
+
+      <h1>📚 My Daily Study Dashboard</h1>
+
+      <!-- Name Section -->
+      <div class="name-box">
+        <input type="text" id="studentName" placeholder="Enter Your Name">
+        <button onclick="saveName()">Save</button>
+      </div>
+
+      <h2 id="greeting">Hello Student 👋</h2>
+
+      <!-- Date -->
+      <p id="date"></p>
+
+      <!-- Task Input -->
+      <div class="input-box">
+        <input type="text" id="taskInput" placeholder="Enter today's study task">
+        <button onclick="addTask()">Add Task</button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="taskList"></ul>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
